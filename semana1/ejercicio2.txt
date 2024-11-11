@@ -1,0 +1,89 @@
+## 2.Cree un algoritmo que describa su rutina diaria. Use condiciones, condiciones multiples y ciclos.
+
+1.Inicio
+
+2.Si amanezco un dia entre semana: Lunes o Martes o Miercoles o Jueves o Viernes:
+
+a. Alistarme para ir al gimnacio a las 4:30 am.
+
+b. Al llegar al gimnacio, para cada rutina diaria:
+
+                i: Tomar agua
+
+                ii.Dedicarle 7 minutos a la caminadora para iniciar calentamiento.
+
+                iii.Consultar desde la aplicación del telefono cual es la rutina del dia
+
+                iv.Si algun ejercicio no lo aguanto o me da pereza hacerlo:
+
+                                a.Cambio el ejercicio o me lo salto.
+
+                v.Dedicar hora y media para cumplir cada rutina diaria.
+
+c. Al llegar a la casa, despues del gimnacio, para cada rutina de la manana dedicar tiempo para realizar lo siguiente:
+
+                       i.Para cada desayuno:
+
+                                a.Escoger alguna de las siguientes bebidas: Cafe negro o Jugo de Naranja.
+
+                                b.Escoger algun alimento para el desayuno: huevo o pinto o cereal y una galleta.
+
+d.Bañarme
+
+e. Prepararme para iniciar a trabajar (teletrabajo), para cada rutina de trabajo realizar las siguientes acciones:
+
+                 i.Iniciar sesión.
+
+                 ii.De 7:30am a 9am dedicar tiempo a tomar nuevos tiquetes para dar soporte tecnico.
+
+                 iii. De 9am a 12pm, trabajar los tiquetes uno por uno.
+
+                 iv. Si resuelvo el tiquete:
+
+                             a.Cerrarlo marcarlo como resuelto.
+
+                  v.Sino:
+
+                             a.Continuar trabajando el tiquete los siguientes dias.
+
+                  vi.Almorzar de 12pm a 1pm.
+
+                  vii.Dedicar tiempo para resolver tiquetes hasta las 4pm
+
+f. Luego del trabajo, descansar hasta las 6pm.Mientras descanso puedo realizar las siguientes actividades:
+
+                   i.Jugar video juegos o leer o ver netflix (o cualquier plataforma de streaming).
+
+                   ii. Si estoy muy cansado:
+
+                            a.Dormir.
+
+g.Luego de descanzar dedicar el resto del tiempo del dia para estudiar y practicar programación.
+
+h. Dormir hasta las 4:30am.
+
+3..Si amanezco un fin de semana: Sabado o Domingo:
+
+              a.Desayunar, para cada desayuno:
+
+                                i.Escoger alguna de las siguientes bebidas: Cafe negro o Jugo de Naranja.
+
+                                ii.Escoger algun alimento para el desayuno: huevo o pinto o cereal y una  galleta.
+
+        b.Para el resto del tiempo dedicarme a organizarme y realizar algunas las siguientes actividades:
+
+                     i.Si deseo estudiar:
+
+                                      a.Dedicarle al menos 3 horas al dia.
+
+                            ii.Si deseo salir a comprar cosas (alimentos o ropa o tecnologia):
+
+                                a.Dedicarle tiempo hasta el anochecer.
+
+                      iii.Si deseo jugar videojuegos:
+
+                                a. Dedicarle máximo 2 horas.
+
+                      iv.Ver alguna serie o película.
+
+4.Fin

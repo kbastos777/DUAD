@@ -1,0 +1,53 @@
+# **Ejercicios Semana 1**
+
+## 1.Cree un algoritmo para ver un video en Youtube. Sea lo más especifico posible.
+
+1.Inicio
+
+2.Si tiene computadora:
+
+ a.Abrir navegador favorito e Ingresar a Youtube.com.
+
+ b.Buscar el video favorito usando la barra de buscador o eligir algun video que te llame la atención desde la pantalla de inicio.
+
+ c.Mientras se este viendo el video en Youtube:
+
+             i.Poner atención.
+
+       ii.Si el video esta muy aburrido:
+
+           a.Quitar el video (finalizar ciclo del video) y volver al punto b. 
+
+ iii.Sino, si el video esta muy bueno:
+
+     a.Disfrutar del contenido del video hasta que termine su reproducción.
+
+ d.Si no deseo ver más videos:
+
+               i.Cerrar el navegador de internet.
+
+3.Sino, si tiene smartphone, o si tiene tablet, o si tiene smart TV:
+
+  a.Ingresar a la app de Youtube.
+
+  b.Buscar video favorito usando la barra de buscador o eligir algun video que te llame la atención desde la    pantalla de inicio.
+
+  c.Mientras se este viendo el video en Youtube:
+
+               i.Poner atención.
+
+               ii.Si el video esta muy aburrido:
+
+                   a.Quitar el video (finalizar ciclo del video) y volver al punto b. 
+
+               iii.Sino, si el video esta muy bueno:
+
+                   a.Disfrutar del contenido del video hasta que termine su reproducción.
+
+d.Si no deseo ver más videos:
+
+               i.Cerrar app de Youtube.
+
+4. De otra manera no sera posible ver un video en la plataforma de Youtube.
+
+5.Fin

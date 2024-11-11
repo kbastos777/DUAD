@@ -1,0 +1,15 @@
+## Ejercicio #3
+
+<aside>
+🔷
+
+Cree un diagrama de flujo que pida 3 números al usuario. Si uno de esos números es 30, o si los 3 sumados dan 30, mostrar “*Correcto*”. Sino, mostrar “*incorrecto*”.
+
+*Ejemplos*:
+
+1. 23, 30, 768 → Correcto (hay un 30)
+2. 10, 15, 5 → Correcto (10 + 15 + 5 = 30)
+3. 35, 56, 2 → Incorrecto (no hay ningún 30, y la suma de ellos tampoco da 30)
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/f1d37253-9705-43bb-8ee7-9bdded9ded6d/image.png)

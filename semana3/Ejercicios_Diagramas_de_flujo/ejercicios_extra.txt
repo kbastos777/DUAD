@@ -1,0 +1,57 @@
+<aside>
+🔷
+
+## Ejercicios Extra
+
+</aside>
+
+## Ejercicio #4
+
+🔷  Cree un diagrama de flujo que le pida 5 números al usuario y muestre    el mayor.
+
+1. *Ejemplos*:
+    1. 4, 76, 43, 6, 8 → 76
+    2. 1, 2, 3, 6, 7 → 7
+    3. 2132, 4355, 1132, 2323, 1214 → 4355
+    
+
+## Ejercicio #5
+
+![Lyfter_modulo1_semana3_ejercicio1.jpg](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/19146f85-8108-4732-b9ae-3b40822867ba/Lyfter_modulo1_semana3_ejercicio1.jpg)
+
+<aside>
+🔷
+
+Cree un diagrama de flujo que le pida un numero al usuario y muestre “*Fizz*” si es divisible entre 3, “*Buzz*” si es divisible entre 5, y “*FizzBuzz*” si es divisible entre ambos.
+
+1. *Ejemplos*:
+    1. 33 → Fizz
+    2. 25 → Buzz
+    3. 30 → FizzBuzz
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/d83634db-206c-4545-adbc-5f621f6c7b6a/image.png)
+
+## Ejercicio #6
+
+<aside>
+🔷
+
+Cree un diagrama de flujo que le pida 100 números al usuario y muestre la suma de todos.
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/7f9ab77f-6ca3-4ea9-b5ef-c3e42c38c405/image.png)
+
+## Ejercicio #7
+
+<aside>
+🔷
+
+Cree un diagrama de flujo que le pida 100 números al usuario y muestre el mayor de todos.
+
+1. *Ejemplos*:
+    1. 4, 76, 43, 6, 8 → 76
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/c8745593-dd89-4939-a6d7-a8ddae0b7cba/image.png)

@@ -1,0 +1,274 @@
+## Ejercicio #1
+
+Cree diagramas de flujo de los [Ejercicios de Pseudocódigo](https://www.notion.so/Ejercicios-de-Pseudoc-digo-8626a7a9b3d54e5ca185e1b01aa3546f?pvs=21) previamente creados.
+
+1.Cree un pseudocódigo que le pida un `precio de producto` al usuario, calcule su descuento y muestre el precio final tomando en cuenta que:
+
+1. Si el precio es menor a 100, el descuento es del 2%.
+2. Si el precio es mayor o igual a 100, el descuento es del 10%.
+
+<aside>
+🔷
+
+### Pseudo-código
+
+1.Inicio
+
+2.Definir `precio de producto`
+
+3.Definir `precio final`
+
+4.Definir `descuento`
+
+5.Mostrar “Ingrese el precio del producto”
+
+6.Pedir `precio de producto` 
+
+7.`precio final` = 0
+
+8.`descuento` = 0
+
+9.Si (`precio de producto` < 100) entonces
+
+  i. `descuento` = `precio de producto` * 0,02
+
+  ii.`precio final` = `precio de producto` - `descuento`
+
+10.Sino
+
+  i. `descuento` = `precio de producto` * 0,10
+
+  ii.`precio final` = `precio de producto` - `descuento`
+
+11.FinSi
+
+12.Mostar “el precio final es `precio final`”
+
+13.Fin
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/d728770f-3006-4407-81d6-4df26a96430a/image.png)
+
+2.Cree un pseudocódigo que le pida un `tiempo en segundos` al usuario y calcule si es menor o mayor a 10 minutos. Si es menor, muestre cuantos segundos faltarían para llegar a 10 minutos. Si es mayor, muestre “*Mayor*”.
+
+<aside>
+🔷
+
+### Pseudo-código
+
+1.Inicio
+
+2.Definir `tiempo en segundos`
+
+3.Definir `diezMin`
+
+4.Definir `segundosFaltantes`
+
+5.Mostrar “Ingrese la cantidad de segundos”
+
+6.Pedir `tiempo en segundos`
+
+7.`segundosFaltantes` = 0
+
+8.`diezMin` = 600   //600 representa la cantidad de segundos en 10 minutos
+
+9.Si (`tiempo en segundos` < `diezMin`) entonces
+
+    i.`segundosFaltantes` = `diezMin` - `tiempo en segundos`
+
+    ii. Mostrar “Faltarían `segundosFaltantes` segundos para llegar a 10 minutos”
+
+10.Sino
+
+           i. Mostrar “`segundosFaltantes` segundos es mayor a 10 minutos”
+
+11.FinSi
+
+12.Fin
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/28f6c232-6fe1-44fc-b979-656b346d46d8/image.png)
+
+3.Cree un algoritmo que le pida un numero al usuario y muestre la suma de todos los números desde 1 hasta ese número.
+
+<aside>
+🔷
+
+### Pseudo-código
+
+1.Inicio
+
+2.Definir `numero`
+
+3.Definir `Contador`
+
+4.Definir `numActual`
+
+5.Definir `sumaTotal`
+
+6.Mostrar “Ingrese un número”
+
+7.Pedir `numero`
+
+8.`Contador` = 0
+
+9.`numActual`=0
+
+10.`sumaTotal` = 0
+
+11. Mientras que (`contador` ≤ `numero`) hacer:
+
+      a.  `numActual` = `numActual` + 1
+
+      b.  `sumaTotal` = `sumaTotal` + `numActual`
+
+12.FinMientras
+
+13.Mostrar “La suma de todos los números desde 1 a `numero` es `sumaTotal`”
+
+14.Fin
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/e39a9387-852c-45aa-b03a-518db6335157/image.png)
+
+4.Cree un algoritmo que le pida 2 números al usuario, los guarde en dos variables distintas (`primero` y `segundo`) y los ordene de menor a mayor en dichas variables.
+
+<aside>
+🔷
+
+### Pseudo-código
+
+1.Inicio
+
+2.Definir `primero`
+
+3.Definir `segundo`
+
+4.Definir `menor`
+
+5.Definir `mayor`
+
+6.`menor` = 0
+
+7.`mayor` = 0
+
+8.Mostrar “Ingrese el primer número”
+
+9.Pedir `primero`
+
+10.Mostrar “Ingrese el segundo número”
+
+11.Pedir `segundo`
+
+12.Si (`primero` < `segundo`) entonces
+
+     i.`menor` = `primero`
+
+     ii.`mayor` = `segundo`
+
+     iii. Mostrar ”El order de menor a mayor es: `menor` ,`mayor` ”
+
+13.Sino
+
+     i.`menor` = `segundo`
+
+     ii.`mayor` = `primero`
+
+     iii. Mostrar ”El orden de menor a mayor es: `menor` ,`mayor` ”
+
+14.FinSi
+
+15.Fin
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/77800de4-17c0-45bc-8783-df6183308769/image.png)
+
+5.Cree un algoritmo que le pida al usuario una velocidad en km/h y la convierta a m/s. Recuerda que `1 km == 1000m` y `1 hora == 60 minutos * 60 segundos`.
+
+<aside>
+🔷
+
+### Pseudo-código
+
+1.Inicio
+
+2.Definir `velocidadKm`
+
+3.Definir `velocidadMs`
+
+4.`velocidadMs` = 0
+
+5.Mostrar ”Ingrese una velocidad en km/h”
+
+6.Pedir `velocidadKm`
+
+7.`velocidadMs` = `velocidadKm`  * 0,277778
+
+8.Mostrar ”La velocidad `velocidadKm` km/h en m/s es `velocidadMs` m/s”
+
+9.Fin
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/96c36e3f-603d-4932-9cef-b44e3c55df12/image.png)
+
+6.Cree un algoritmo que le pregunte al usuario por el sexo de 6 personas, ingresando 1 si es mujer o 2 si es hombre, y muestre al final el porcentaje de mujeres y hombres.
+
+<aside>
+🔷
+
+### Pseudo-código
+
+1.Inicio
+
+2.Definir `contadorHombres`
+
+3.Definir `contadorMujeres`
+
+4.Definir `contador`
+
+5.Definir `sexo` 
+
+6.Definir `porcentajeHombres`
+
+7.Definir `porcentajeMujeres`
+
+8.`contadorHombres` = 0
+
+9.`contadorMujeres` = 0
+
+10.`contador`  = 0
+
+11.`porcentajeHombres`= 0
+
+12.`porcentajeMujeres`= 0
+
+13.Mientras (`contador` ≤ 6) hacer:
+
+   a.Pedir `sexo`
+
+   b.Si (`sexo` == 1) entonces
+
+       i.`contadorMujeres` = `contadorMujeres` + 1
+
+   c.Sino
+
+       i.`contadorHombres` = `contadorHombres` + 1
+
+14.FinMientras
+
+15.`porcentajeHombres` = (`contadorHombres`  /  6 ) * 100
+
+16.`porcentajeMujeres` = (`contadorMujeres` /   6 ) * 100
+
+17.Mostrar “El porcentaje de hombres es `porcentajeHombres` % y el porcentaje de mujeres es `porcentajeMujeres` %”  
+
+18.Fin
+
+</aside>
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8050d946-e5e0-483a-8075-8c26331adf05/06da7296-6edf-4f42-9b2d-e4e7ce3510ed/image.png)
