@@ -1,0 +1,94 @@
+close()  Cierra el archivo
+
+
+detach()  Devuelve el flujo sin procesar separado del búfer
+
+
+fileno()  Va a retornar el descriptor del archivo que este asociado a un objeto del archivo
+
+
+flush()   Limpia el buffer cuando se escribe en un archivo
+
+isatty()   Retorna false o true dependiendo de si el file es interactivo
+
+
+read()     Retorna el contenido del archivo
+
+
+readable()  Retorna false o true dependiendo de si el archivo es leible o no
+
+
+readline()  Retorna una linea del archivo
+
+
+readlines()  Retorna una lista que contiene cada linea del archivo
+
+
+seek()  Cambia la posicion del archivo
+
+
+seekable()   Retorna False o True dependiendo de si el archivo puede ser movido de posicion
+
+
+tell()   Retorna la posicion actual del archivo
+
+
+truncate()   Edita el tamaño del archivo a un número especifico de bytes
+
+
+writable()  Retorna false o true dependiendo de si el archivo es escribible o no
+
+
+write()  Escribe un string en el archivo
+
+
+writelines()   escribe los strings de una lista dentro de un archivo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

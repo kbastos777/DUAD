@@ -1,0 +1,28 @@
+## Ejercicio #1
+
+1. Use la función `print()` para mostrar distintos textos en pantalla.
+
+```python
+print("Mi primer programa en Python")
+print("Quiero aprender mucho mas de python")
+print("Me encanta aprender a programar")
+```
+
+## Ejercicio #2
+
+1. Use la función `print()` para mostrar resultados de operaciones matemáticas básicas.
+    1. Por ejemplo:
+        1. 1 + 1 → 2
+        2. 90 + 430 → 520
+        3. 4 * 5 → 20
+
+```python
+print(2*3)
+print((5*3)/2)
+print(60 - 15)
+
+En consola sale respectivamente:
+6
+7.5
+45
+```
