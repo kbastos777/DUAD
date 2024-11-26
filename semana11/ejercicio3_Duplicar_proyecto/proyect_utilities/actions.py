@@ -47,8 +47,8 @@ def top_three_best_students(input_list):
     second_average = 0
     third_average = 0
     best_student = ''
-    second_student = ''
-    third_student = ''
+    second_student = ""
+    third_student = ""
     try:    
         for index , record in enumerate(input_list):
                 current_average =  record[record.index(record[6])]
