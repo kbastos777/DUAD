@@ -18,10 +18,10 @@ class LinkedList:
             while (current_node is not None):
                     number_list.append(current_node.data)
                     current_node = current_node.next
-            for out_index in range(0,len(number_list)-1,):
+            for out_index in range(0,len(number_list)-1):
                 has_made_changes = False
                 print(number_list)
-                for inside_index in range(0,len(number_list)-1,):
+                for inside_index in range(0,len(number_list)-1):
                     current_index = number_list[inside_index]
                     next_index = number_list[inside_index + 1]
                     if current_index < next_index:
