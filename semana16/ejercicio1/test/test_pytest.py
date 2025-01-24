@@ -7,7 +7,7 @@ def test_short_list_len():
     #Act
     result = bubble_sort_len(input_list)
     #Assert
-    assert result <= 5
+    assert result == 3
 
 
 def test_long_list_len():
