@@ -6,9 +6,10 @@ def sum_numbers_in_list (num_list):
 
 
 def return_sorted_phrase (input_phrase):
-    for string in range(9, -1,-1):
-        print(input_phrase[string])
-
+    sorted_word_list = []
+    for string in range(len(list(input_phrase))-1, -1,-1):
+        sorted_word_list.append(input_phrase[string]) 
+    return ''.join(sorted_word_list)
 
 def print_upper_case_letters_quantity (phrase):
     counter = 0
@@ -27,13 +28,9 @@ def print_lower_case_letters_quantity (phrase):
 
 
 def return_alphabetic_sorted_list(words):
-    new_phrase = ""
-    for record in words:
-        if record != "-":
-            new_phrase = new_phrase + record
-        else:
-            new_phrase = new_phrase + " "
-    return new_phrase.split()
+    new_list = words.split("-")
+    new_list.sort()
+    return "-".join(str(element) for element in new_list)
 
 
 def create_prime_number_list (input_list):

@@ -5,11 +5,11 @@ from my_module_test.pytest_ejercicios_semana6 import sum_numbers_in_list,return_
 #=========================================================#
 def test_exercise_three_sum_numbers_in_list():
     #Arrange
-    input_list = [100,6,11]
+    input_list = [100,6,11,5,4]
     #Act
     result = sum_numbers_in_list(input_list)
     #Assert
-    assert result > 0
+    assert result == 126
 
 
 def test_exercise_three_sum_numbers_in_list_second():
@@ -18,16 +18,16 @@ def test_exercise_three_sum_numbers_in_list_second():
     #Act
     result = sum_numbers_in_list(input_list)
     #Assert
-    assert result > 0
+    assert result == 63
 
 
 def test_exercise_three_3_sum_numbers_in_list_third():
     #Arrange
-    input_list = [800,1,3]
+    input_list = [800,1,3,5]
     #Act
     result = sum_numbers_in_list(input_list)
     #Assert
-    assert result > 0
+    assert result == 809
 #=========================================================#
 
 
@@ -39,7 +39,7 @@ def test_exercise_four_return_sorted_phrase():
     #Act
     result = return_sorted_phrase(phrase)
     #Assert
-    assert result == print("Hola Mundo")
+    assert result == "Hola mundo"
 
 
 def test_exercise_four_return_sorted_phrase_second():
@@ -48,16 +48,16 @@ def test_exercise_four_return_sorted_phrase_second():
     #Act
     result = return_sorted_phrase(phrase)
     #Assert
-    assert result == print("Sci fi is my favorite")
+    assert result == "Sci fi is my favorite"
 
 
 def test_exercise_four_return_sorted_phrase_third():
     #Arrange
-    phrase = " sraW ratS"
+    phrase = "sraW ratS"
     #Act
     result = return_sorted_phrase(phrase)
     #Assert
-    assert result == print("Star Wars")
+    assert result == "Star Wars"
 
 #=========================================================#
 
@@ -131,9 +131,7 @@ def test_exercise_six_return_list():
     #Arrange
     phrase = "perro-gato-elefante-tigre"
     #Act
-    input_list = return_alphabetic_sorted_list(phrase)
-    input_list.sort()
-    result = "-".join(str(element) for element in input_list)
+    result = return_alphabetic_sorted_list(phrase)
     #Assert
     assert result == "elefante-gato-perro-tigre"
 
@@ -142,9 +140,7 @@ def test_exercise_six_return_list_second():
     #Arrange
     phrase = "planeta-galaxia-nave-nebulosa"
     #Act
-    input_list = return_alphabetic_sorted_list(phrase)
-    input_list.sort()
-    result = "-".join(str(element) for element in input_list)
+    result = return_alphabetic_sorted_list(phrase)
     #Assert
     assert result == "galaxia-nave-nebulosa-planeta"
 
@@ -153,9 +149,7 @@ def test_exercise_six_return_list_third():
     #Arrange
     phrase = "ceviche-limon-mango-aguacate"
     #Act
-    input_list = return_alphabetic_sorted_list(phrase)
-    input_list.sort()
-    result = "-".join(str(element) for element in input_list)
+    result = return_alphabetic_sorted_list(phrase)
     #Assert
     assert result == "aguacate-ceviche-limon-mango"
 #=========================================================#
