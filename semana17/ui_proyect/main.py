@@ -1,0 +1,2 @@
+from ui_utilities.menu_selection import menu_selection
+menu_selection()
