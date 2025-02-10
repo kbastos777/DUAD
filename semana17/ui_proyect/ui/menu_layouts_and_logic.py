@@ -1,24 +1,13 @@
 from ui_utilities.data_utilities import create_dict,write_csv_file,collect_data,return_list_data,collect_category_data
 import PySimpleGUI as sg
+import os
 
 
 sg.theme('Dark Green 2')
 headings_database = [["Title"],["Amount"],["Category"]]
 financial_data = return_list_data('data.csv')
+print(f"[DEBUG] initializing financial_data: {financial_data }")
 category_database = collect_category_data('data.csv')
-
-
-# sg.theme('Dark Green 2')
-# headings_database = [["Title"],["Amount"],["Category"]]
-# financial_data = []
-# category_database = collect_category_data('data.csv')
-
-
-# def export_data():
-#     try:
-#         write_csv_file('data.csv',[record[0] for record in financial_data],financial_data[0][0].keys())
-#     except Exception as ex:
-#         print(f"An error occurred in export_data function due to :{ex}")
 
 
 def create_main_layout():
@@ -101,37 +90,44 @@ def income_logic(income_window_active,window):
     try:    
         while True:
             income_window_active == True
-            income_window = sg.Window("Income administrator", create_income_layout(category_database))
+            income_window = sg.Window("Income administrator", create_income_layout(category_database))      
             while True:
                 eventIncome, values_income = income_window.read(timeout=100)
-                try:
+                try:  
                     if eventIncome == sg.WIN_CLOSED or eventIncome == "Cancel":
-                        income_window.Close()
+                        income_window.close()
                         income_window_active = False
                         break
                     elif eventIncome == "Accept":
                         income = values_income["-TITLE-"]
                         amount = int(values_income["-AMOUNT-"])
                         category = values_income["-MY_CATEGORY-"]
-                        if income and amount and category:
+                        if income and amount and category and not os.path.exists('data.csv'):  
                             financial_data.append(create_dict(income,"+"+str(amount),category))
                             sg.popup(f"Income '{income}' added successfully!")
-                            headers = ["Title", "Amount", "Category"]
-                            write_csv_file('data.csv', financial_data, headers) 
-                            window["-TABLE-"].update(values=return_list_data('data.csv'))
+                            write_csv_file('data.csv', financial_data,financial_data[0].keys())
+                            window["-TABLE-"].update(values=collect_data('data.csv'))
+                            income_window.close()
+                            income_window_active = False
+                        elif income and amount and category and os.path.exists('data.csv'):
+                            financial_data.append(create_dict(income,"+"+str(amount),category))
+                            sg.popup(f"Income '{income}' added successfully!")
+                            write_csv_file('data.csv',financial_data,financial_data[0].keys())
+                            window["-TABLE-"].update(values=collect_data('data.csv'))
                             income_window.close()
                             income_window_active = False
                         elif not category:
                             sg.PopupError("Unable to add income due to missing category!")
                             if eventIncome == sg.WIN_CLOSED or eventIncome == "Cancel":
-                                income_window.Close()
+                                income_window.close()
                                 income_window_active = False
                                 break
                 except ValueError as ex:
-                    print(f"An error occurred in income_logic function due to {ex} ")
+                    print(f"An error occurred in inner section from income_logic function due to {ex} ")
                     sg.PopupError("Invalid value type was entered on amount field, please enter a number!")
+                    income_window.refresh()
                 except TypeError as err:
-                    print(f"An error occurred in income_logic function due to {err} ")   
+                    print(f"An error occurred in inner section from income_logic function due to {err} ")
             break
     except TypeError as err:
         print(f"An error occurred in income_logic function due to {err} ")
@@ -155,12 +151,18 @@ def expense_logic(expense_window_active,window):
                         expense = values_expense["-TITLE-"]
                         amount = int(values_expense["-AMOUNT-"])
                         category = values_expense["-MY_CATEGORY-"]
-                        if expense and amount and category:  
+                        if expense and amount and category and not os.path.exists('data.csv'):  
                             financial_data.append(create_dict(expense,-amount,category))
                             sg.popup(f"Expense '{expense}' added successfully!")
-                            headers = ["Title", "Amount", "Category"]
-                            write_csv_file('data.csv', financial_data,headers)
-                            window["-TABLE-"].update(values=return_list_data('data.csv'))
+                            write_csv_file('data.csv', financial_data,financial_data[0].keys())
+                            window["-TABLE-"].update(values=collect_data('data.csv'))
+                            expense_window.close()
+                            expense_window_active = False
+                        elif expense and amount and category and os.path.exists('data.csv'):
+                            financial_data.append(create_dict(expense,-amount,category))
+                            sg.popup(f"Expense '{expense}' added successfully!")
+                            write_csv_file('data.csv',financial_data,financial_data[0].keys())
+                            window["-TABLE-"].update(values=collect_data('data.csv'))
                             expense_window.close()
                             expense_window_active = False
                         elif not category:
