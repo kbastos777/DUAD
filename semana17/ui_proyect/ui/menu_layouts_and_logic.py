@@ -1,4 +1,4 @@
-from ui_utilities.data_utilities import create_dict,write_csv_file,collect_data,return_list_data,collect_category_data
+from ui_utilities.data_utilities import create_dict,write_csv_file,collect_data,return_list_data,return_category_data,create_category_dict,collect_category_data
 import PySimpleGUI as sg
 import os
 
@@ -7,7 +7,7 @@ sg.theme('Dark Green 2')
 headings_database = [["Title"],["Amount"],["Category"]]
 financial_data = return_list_data('data.csv')
 print(f"[DEBUG] initializing financial_data: {financial_data }")
-category_database = collect_category_data('data.csv')
+category_database = return_category_data('categories.csv')
 
 
 def create_main_layout():
@@ -74,8 +74,16 @@ def category_logic(category_window_active):
                 break
             elif eventCategory == "Accept":
                 category = valuesCategory["-CATEGORY-"]
-                if category:
-                    category_database.append(category)  
+                if category and not os.path.exists('categories.csv'):
+                    category_database.append(create_category_dict(category))
+                    write_csv_file('categories.csv',category_database,category_database[0].keys())
+                    sg.popup(f"Category '{category}' added successfully!")
+                    category_window.Close()
+                    category_window_active = False
+                    break
+                if category and os.path.exists('categories.csv'):
+                    category_database.append(create_category_dict(category))
+                    write_csv_file('categories.csv',category_database,category_database[0].keys())
                     sg.popup(f"Category '{category}' added successfully!")
                     category_window.Close()
                     category_window_active = False
@@ -90,7 +98,7 @@ def income_logic(income_window_active,window):
     try:    
         while True:
             income_window_active == True
-            income_window = sg.Window("Income administrator", create_income_layout(category_database))      
+            income_window = sg.Window("Income administrator", create_income_layout(collect_category_data('categories.csv')))      
             while True:
                 eventIncome, values_income = income_window.read(timeout=100)
                 try:  
@@ -139,7 +147,7 @@ def expense_logic(expense_window_active,window):
     try:    
         while True:
             expense_window_active == True
-            expense_window = sg.Window("Expense administrator", create_expense_layout(category_database))      
+            expense_window = sg.Window("Expense administrator", create_expense_layout(collect_category_data('categories.csv')))      
             while True:
                 eventExpense, values_expense = expense_window.read(timeout=100)
                 try:  
